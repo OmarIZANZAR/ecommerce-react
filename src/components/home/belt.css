@@ -1,0 +1,105 @@
+.ticker-wrap {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .ticker {
+    height: 160px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+  }
+  
+  .ticker:hover .belt {
+    animation-play-state: paused;
+  }
+  
+  .belt {
+    display: inline-block;
+    white-space: nowrap;
+    height: 100%;
+    width: fit-content;
+    overflow: hidden;
+  }
+  
+  .ticker-belt-1 {
+    animation:  12s linear 1 slidy-one, 
+                24s linear 12s infinite slidy-one-again;
+  }
+  
+  @keyframes slidy-one {
+    0% {    
+      transform: translateX(0%);
+      visibility: visible;
+    }
+  
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  @keyframes slidy-one-again {
+    0% {    
+      transform: translateX(100%);
+      visibility: visible;
+    }
+  
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .ticker-belt-2 {
+    animation: 24s linear infinite slidy-two;
+  }
+  
+  @keyframes slidy-two {
+    0% {    
+      transform: translateX(0%);
+      visibility: visible;
+    }
+  
+    100% {
+      transform: translateX(-200%);
+    }
+  }
+  
+  .ticker-item {
+    height: 100%;
+    width: 160px;
+    margin: 0 10px;
+    padding: 5px;
+    display: inline-block;
+  }
+  
+  .ticker-item:hover {
+    cursor: pointer;
+    background-color: #8400672a;
+    border-radius: 20px;
+  }
+  
+  .ticker-item img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .blur {
+    filter: blur(3px) drop-shadow(10px 10px 5px rgba(0,0,0,.4));
+  }
+  
+  @media only screen and (max-width: 1000px) {
+    .ticker {
+      height: 100px;
+    }
+   
+    .ticker-item {
+      width: 100px;
+    }
+  }
+    
+    

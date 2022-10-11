@@ -1,0 +1,76 @@
+/* SHOP PAGE STYLE */
+.shop-header {
+    padding: 2.4rem 0;
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.shop-header-title {
+    padding: 0;
+    font-size: 3.6rem;
+    font-weight: 300;
+}
+
+.shop-header-text {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-left: 1rem;
+}
+
+.shop-header-text-bolder {
+    font-weight: 700;
+}
+
+.shop-body {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.shop-body-products {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media only screen and (max-width: 1100px) {
+    .shop-body {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .shop-header {
+        padding: 2rem 0;
+    }
+    
+    .shop-header-title {        
+        font-size: 3rem;
+    }
+    
+    .shop-header-text {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .shop-header {
+        padding: 2rem 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .shop-header-title {
+        font-size: 2rem;
+    }
+    
+    .shop-header-text {
+        margin-left: 0;
+    }
+}

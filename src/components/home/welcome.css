@@ -1,0 +1,115 @@
+.welcome {
+    flex-grow: 1;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .welcome-thumb {
+    width: 300px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+  }
+  
+  .welcome-thumb-1 {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-color: #84006731;
+    border-radius: 20px;
+    transform: rotateZ(6deg);
+  }
+  
+  .welcome-thumb-2 {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-color: #00845871;
+    border-radius: 20px;
+  }
+  
+  .welcome-thumb-2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+  }
+  
+  .welcome-text {
+    width: 60%;
+    flex-grow: 1;
+    padding: 2rem;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #840067; */
+  }
+  
+  .welcome-text h1 {
+    font-size: 3rem;
+  }
+  
+  .welcome-text ul {
+    list-style-type: "⭐";
+    width: 100%;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  
+  .welcome-text ul li {
+    margin: 0 20px;
+  }
+  
+  @media only screen and (max-width: 1000px) {
+    .welcome {
+      margin-top: 1rem;
+      flex-direction: column;
+    }
+    
+    .welcome-thumb {
+      height: 200px;
+      justify-content: center;
+    }
+    
+    .welcome-thumb-1 {
+      width: 200px;
+      height: 200px;
+    }
+    
+    .welcome-thumb-2 {
+      width: 200px;
+      height: 200px;
+    }
+    
+    .welcome-text {
+      width: 100%;
+      height: 50%;
+      padding: 1rem;
+    }
+    
+    .welcome-text h1 {
+      font-size: 1.6rem;
+    }
+    
+    .welcome-text ul {
+      flex-direction: column;
+      align-items: flex-start;
+      font-size: 1.2rem;
+    }
+    
+    .welcome-text ul li {
+      margin: 0 20px;
+    }
+  }
